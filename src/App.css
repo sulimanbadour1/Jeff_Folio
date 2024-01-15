@@ -1,0 +1,5 @@
+.App{
+  color: var(--accent);
+  background-color: var(--primary);
+  padding: 0rem 2rem;
+}
