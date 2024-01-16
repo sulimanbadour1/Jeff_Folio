@@ -80,3 +80,8 @@ button{
 	margin-bottom: var(--margin-1);
 	font-weight: var(--bold);
 }
+
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */

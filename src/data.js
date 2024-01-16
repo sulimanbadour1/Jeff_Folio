@@ -1,5 +1,8 @@
 import * as icon from "react-icons/si";
-
+import daloopa from "./logos/companies/daloopa.jpg";
+import upwork from "./logos/companies/upwork.png";
+import jumio from "./logos/companies/jumio.png";
+//
 const profile = {
   name: "Jafar Badour",
   role: "Machine Learning Engineer",
@@ -100,4 +103,53 @@ const contact = {
   email: "example@email.com",
 };
 
-export { profile, social, work, stack, contact, brand };
+const experiences = [
+  {
+    title: "Machine Learning Engineer L4, Full-time",
+    company_name: "Daloopa Inc",
+    icon: daloopa, // Replace with the actual image path
+    iconBg: "#012060",
+    date: "Aug 2023 - Now",
+    points: [
+      "Created an autotagger system that automatically detects key, value business metrics in SEC and private companies filings.",
+      "Developed a pipeline for detecting labeling errors in text data, which had a high impact on reducing churn rate of clients.",
+    ],
+  },
+  {
+    title: "Machine Learning Engineer L4, Part-time (Remote)",
+    company_name: "Kalosfloria Inc",
+    icon: upwork, // Replace with the actual image path
+    iconBg: "#012060",
+    date: "Jul 2023 - Now",
+    points: [
+      "Created a system to automatically detect line items from financial sheets for warehouses receipts and invoices.",
+      "Designed the deployment for machine learning models developed by the team data scientist on the company servers.",
+    ],
+  },
+  {
+    title: "Machine Learning Engineer L4, Contractor",
+    company_name: "Jumio Corporation",
+    icon: jumio, // Replace with the actual image path
+    iconBg: "#012060",
+    date: "Aug 2022 - June 2023",
+    points: [
+      "Utilized PaddleOCR to implement a new approach for text detection for Chinese (Taiwan and China) for classified IDs in south Asia.",
+      "Designed Sagemaker jobs for iterative training for OCR models.",
+      "Created MLOps Dags in airflow for creation, preprocessing and training of field-mapping (map fields on images to the respective labels) models.",
+    ],
+  },
+  {
+    title: "Machine Learning Engineer/ Backend developer L3 (Remote)",
+    company_name: "Daloopa Inc",
+    icon: daloopa, // Replace with the actual image path
+    iconBg: "#012060",
+    date: "Apr 2023 - June 2022",
+    points: [
+      "Created DevOps pipelines (using Terraform framework) infrastructure to deploy ML solutions on AWS servers.",
+      "Fine-tuned EasyOCR machine learning model on the annotated private documents to replace Amazon Textract.",
+      "Led Data Warehouse project at Daloopa to design ETL in pipelines and produce actionable dashboards leading to an increase in the productivity of the sales team.",
+    ],
+  },
+];
+
+export { profile, social, work, stack, contact, brand, experiences };

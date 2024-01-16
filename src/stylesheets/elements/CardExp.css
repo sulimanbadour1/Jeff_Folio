@@ -1,0 +1,49 @@
+.outerdiv{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.headerOne{
+    color: var(--primary);
+	background-color: var(--accent);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.headerTwo{
+    color: var(--primary);
+	background-color: var(--accent);
+    font-size: 12px;
+    margin-top: 8px;
+   font-weight: 700;
+}
+
+.expPoint{
+    padding: 4px;
+    margin-top: 20px;
+    list-style-type: disc;
+    gap: 10px;
+}
+
+.listPoint{
+    color: var(--primary);
+	background-color: var(--accent);
+  font-size: 14px;
+  padding-left: 4px;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+
+
+.imgIcon{
+  width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 55%;
+}
+
