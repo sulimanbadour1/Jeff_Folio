@@ -2,7 +2,11 @@ import * as icon from "react-icons/si";
 import daloopa from "./logos/companies/daloopa.jpg";
 import upwork from "./logos/companies/upwork.png";
 import jumio from "./logos/companies/jumio.png";
-
+import neerc from "./logos/awards/neerc.png";
+import face from "./logos/awards/face.webp";
+import meta from "./logos/awards/meta.png";
+import google from "./logos/awards/google.png";
+import aws from "./logos/awards/aws.png";
 //
 const profile = {
   name: "Jafar Badour",
@@ -162,4 +166,31 @@ const experiences = [
   },
 ];
 
+// const awards = [
+//   {
+//     title: "NEERC",
+//     description: "NEERC",
+//     icon: neerc,
+//   },
+//   {
+//     title: "FACEBOOK HACKER CUP",
+//     description: "FACEBOOK HACKER CUP",
+//     icon: face,
+//   },
+//   {
+//     title: "META HACKATHON",
+//     description: "META HACKATHON",
+//     icon: meta,
+//   },
+//   {
+//     title: "Google Kickstart",
+//     description: "Google Kickstart",
+//     icon: google,
+//   },
+//   {
+//     title: "Amazon HackOn",
+//     description: "Amazon Hackathon",
+//     icon: aws,
+//   },
+// ];
 export { profile, social, work, stack, contact, brand, experiences };
