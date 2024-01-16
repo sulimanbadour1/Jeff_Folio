@@ -9,6 +9,7 @@
 .Home-hi{
 	color: var(--accent);
 	margin-left: .3rem;
+	font-weight: 700;
 }
 
 .Home-h1{
@@ -29,6 +30,7 @@
 .Home-description{
 	max-width: 520px;
 	margin-bottom: 24px;
+	font-weight: 400;
 }
 
 .Banner{

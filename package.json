@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "framer-motion": "^10.18.0",
+    "gsap": "^3.12.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.3.1",

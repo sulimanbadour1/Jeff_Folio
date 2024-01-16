@@ -10,6 +10,7 @@ import ScrollToTop from "/src/components/elements/ScrollToTop";
 import "/src/App.css";
 import "/src/stylesheets/theme/theme.css";
 import WorkExperience from "./components/sections/WorkExperience";
+import Awards from "./components/sections/Awards";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -19,8 +20,9 @@ function App() {
       <Header />
       <Home />
       <Work />
-      <Stack />
       <WorkExperience theme={theme} />
+      <Stack />
+      <Awards />
       <Contact />
       <Footer />
       <ScrollToTop />

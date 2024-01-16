@@ -2,6 +2,7 @@ import * as icon from "react-icons/si";
 import daloopa from "./logos/companies/daloopa.jpg";
 import upwork from "./logos/companies/upwork.png";
 import jumio from "./logos/companies/jumio.png";
+
 //
 const profile = {
   name: "Jafar Badour",
@@ -12,8 +13,8 @@ const profile = {
 
 const social = [
   { icon: icon.SiGithub, link: "https://github.com" },
-  { icon: icon.SiCodepen, link: "https://www.medium.com/" },
-  { icon: icon.SiTwitter, link: "https://www.twitter.com/" },
+  { icon: icon.SiUpwork, link: "https://www.upwork.com/" },
+  { icon: icon.SiLinkedin, link: "https://www.twitter.com/" },
   { icon: icon.SiInstagram, link: "https://www.instagram.com/" },
 ];
 
@@ -76,23 +77,32 @@ const work = [
 
 const stack = [
   {
-    name: "Front End",
+    name: "Tech Stack",
     items: [
-      { icon: icon.SiHtml5, name: "HTML" },
-      { icon: icon.SiCss3, name: "CSS" },
-      { icon: icon.SiBootstrap, name: "Bootstrap" },
-      { icon: icon.SiJavascript, name: "Javascript" },
-      { icon: icon.SiTypescript, name: "Typescript" },
-      { icon: icon.SiReact, name: "React" },
-    ],
-  },
-  {
-    name: "Back End",
-    items: [
-      { icon: icon.SiNodedotjs, name: "NodeJS" },
-      { icon: icon.SiDeno, name: "Deno" },
-      { icon: icon.SiMongodb, name: "MongoDB" },
-      { icon: icon.SiFirebase, name: "Firebase" },
+      { icon: icon.SiPython, name: "Python" },
+      { icon: icon.SiCplusplus, name: "CPP" },
+      { icon: icon.SiPytorch, name: "PyTorch" },
+      { icon: icon.SiDjango, name: "Django" },
+      { icon: icon.SiTensorflow, name: "Tensorflow" },
+      { icon: icon.SiKeras, name: "Keras" },
+      { icon: icon.SiFlask, name: "Flask" },
+      { icon: icon.SiUbuntu, name: "Ubuntu" },
+      { icon: icon.SiDocker, name: "Docker" },
+      { icon: icon.SiGit, name: "Git" },
+      { icon: icon.SiAmazonaws, name: "Amazon" },
+      { icon: icon.SiGooglecloud, name: "Google Cloud" },
+      { icon: icon.SiMicrosoftazure, name: "Microsoft Azure" },
+      { icon: icon.SiHeroku, name: "Heroku" },
+      { icon: icon.SiJupyter, name: "Jupyter" },
+      { icon: icon.SiRedhatopenshift, name: "RedShift" },
+      { icon: icon.SiApachecassandra, name: "Cassandra" },
+      { icon: icon.SiApachekafka, name: "Kafka" },
+      { icon: icon.SiCelery, name: "Celery" },
+      { icon: icon.SiDataversioncontrol, name: "Data Warehousing" },
+      { icon: icon.SiApacheairflow, name: "Airflow" },
+      { icon: icon.SiRedis, name: "Redis" },
+      { icon: icon.SiNginx, name: "Nginx" },
+      { icon: icon.SiGnubash, name: "Bash" },
     ],
   },
 ];
