@@ -11,8 +11,8 @@
 .Card:hover{
 	transform: scale(1.05);
 	transform-origin: center;
-	transition: .3s ease;
-	transform-style: preserve-3d;
+	transition: .8s ease;
+
 }
 
 .Card-h3{
