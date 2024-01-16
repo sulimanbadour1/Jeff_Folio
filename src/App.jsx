@@ -11,7 +11,6 @@ import "/src/App.css";
 import "/src/stylesheets/theme/theme.css";
 import WorkExperience from "./components/sections/WorkExperience";
 import Awards from "./components/sections/Awards";
-import Slider from "./components/elements/Slider";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -20,7 +19,6 @@ function App() {
     <div className="App" id="top" data-theme={theme}>
       <Header />
       <Home />
-
       <Work />
       <WorkExperience theme={theme} />
       <Stack />
