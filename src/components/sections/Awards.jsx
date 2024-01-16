@@ -33,27 +33,33 @@ const Awards = () => {
               </span>
             </h1>
             <h1 className={styles.text}>
-              NEERC winner
+              NEERC Winner
               <span className={styles.span}>
                 2017 and 2018 in Saint Petersburg, Russia.
               </span>
             </h1>
             <h1 className={styles.text}>
               Facebook Hackercup
-              <span className={styles.span}>ranked 213 in round 2</span>
+              <span className={styles.span}>Ranked 213 in round 2</span>
             </h1>
             <h1 className={styles.text}>
-              Facebook Hateful Memes Challeng
-              <span className={styles.span}> ranked 32/3172</span>
+              Facebook Hateful Memes Challenge
+              <span className={styles.span}> Ranked 32/3172</span>
             </h1>
             <h1 className={styles.text}>
               Google Kickstart
-              <span className={styles.span}> ranked 34/10000</span>
+              <span className={styles.span}> Ranked 34/10000</span>
             </h1>
             <h1 className={styles.text}>
               International Physics Olympiad
               <span className={styles.span}>
-                HM award in IPhO 46th, Mumbai, India
+                HM award in IPhO 46th, Mumbai, India.
+              </span>
+            </h1>
+            <h1 className={styles.text}>
+              IEEE 2021
+              <span className={styles.span}>
+                Hateful Memes Classification using Machine Learning
               </span>
             </h1>
           </div>
