@@ -6,7 +6,7 @@ const Services = () => {
       <div className="container">
         <h2 className="Contact-h2 section-head">Services.</h2>
         {services.map((service) => {
-          return <Service project={service} />;
+          return <Service project={service} key={service.title1} />;
         })}
       </div>
     </section>

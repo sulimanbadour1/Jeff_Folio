@@ -165,7 +165,7 @@ const experiences = [
     company_name: "Daloopa Inc",
     icon: daloopa, // Replace with the actual image path
     iconBg: "#012060",
-    date: "Apr 2023 - June 2022",
+    date: "April 2021 - June 2022",
     points: [
       "Created DevOps pipelines (using Terraform framework) infrastructure to deploy ML solutions on AWS servers.",
       "Fine-tuned EasyOCR machine learning model on the annotated private documents to replace Amazon Textract.",
@@ -218,7 +218,7 @@ const projects = [
     title: "Office Studio",
     src: "officestudio.png",
     color: "#8C8C8C",
-    label: "Machine Learning",
+    label: "NLP",
     icon: icon.SiGithub,
     description:
       "Office Studio is a creative conference that explores the relationship between commerce and creativity.",
@@ -229,7 +229,7 @@ const projects = [
     title: "Locomotive",
     src: "locomotive.png",
     color: "#EFE8D3",
-    label: "Machine Learning",
+    label: "AI",
     icon: icon.SiGithub,
     description:
       "Locomotive is a creative conference that explores the relationship between commerce and creativity.",
