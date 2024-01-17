@@ -3,3 +3,5 @@
 ## Features
 
 - **Data-Driven Content**: The portfolio content is dynamically loaded from the `data.js` file, making it easy to update and maintain.
+
+![Landing Page](path/to/landing-page-image.jpg)

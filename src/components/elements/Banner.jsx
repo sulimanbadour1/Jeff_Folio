@@ -1,6 +1,40 @@
 import "../../stylesheets/elements/Banner.css";
 import jefflogo from "../../logos/svglogo.svg";
+import { useEffect } from "react";
+class CopypasteKeyboard {
+  constructor(el) {
+    this.el = document.querySelector(el);
+    this.init();
+  }
+
+  get isMac() {
+    return /(Mac|iP[ahno]+[de])/i.test(navigator.userAgent);
+  }
+
+  init() {
+    window.addEventListener("keydown", this.keyAction.bind(this, true));
+    window.addEventListener("keyup", this.keyAction.bind(this, false));
+  }
+
+  keyAction(down, e) {
+    let { key } = e;
+    const isCmd = key === "Meta" && this.isMac;
+    const isCtrl = key === "Control" && !this.isMac; // for non-Apple only
+
+    if (isCmd || isCtrl) key = "cmd";
+
+    const keyEl = this.el?.querySelector(`[data-key="${key}"]`);
+    const activeClass = "active";
+
+    if (down === true) keyEl?.classList.add(activeClass);
+    else keyEl?.classList.remove(activeClass);
+  }
+}
+
 export const Banner = () => {
+  useEffect(() => {
+    new CopypasteKeyboard(".keyboard");
+  }, []);
   return (
     <div>
       <div className="keyboard">
@@ -35,12 +69,12 @@ export const Banner = () => {
             </small>
           </span>
         </button>
-        <button className="keyboard__key" type="button" data-key="c">
+        <button className="keyboard__key" type="button" data-key="m">
           <span className="keyboard__key-lines">
             <span className="keyboard__key-line">M</span>
           </span>
         </button>
-        <button className="keyboard__key" type="button" data-key="v">
+        <button className="keyboard__key" type="button" data-key="l">
           <span className="keyboard__key-lines">
             <span className="keyboard__key-line">L</span>
           </span>
