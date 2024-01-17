@@ -10,6 +10,7 @@ body,
 button {
 	color: var(--fg);
 	font: 1em/1.5 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+	
 }
 /* body {
 	background-color: var(--bg);
