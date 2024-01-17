@@ -9,10 +9,12 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.33",
+    "emailjs": "^4.0.3",
     "framer-motion": "^10.18.0",
     "gsap": "^3.12.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^4.3.1",
     "react-vertical-timeline-component": "^3.6.0",
     "tailwind-merge": "^2.2.0",

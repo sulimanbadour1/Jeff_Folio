@@ -11,6 +11,11 @@ import jumio from "./logos/companies/jumio.png";
 import c2montreal from "./logos/projects/landingblog.webp";
 import officestudio from "./logos/projects/northface.webp";
 import locomotive from "./logos/projects/tenso.webp";
+//Service Images
+import ml from "./logos/services/ml.png";
+import bot from "./logos/services/bot.png";
+import backend from "./logos/services/backend.png";
+import data from "./logos/services/data.png";
 const profile = {
   name: "Jafar Badour",
   role: "Machine Learning Engineer",
@@ -232,4 +237,37 @@ const projects = [
     image: locomotive,
   },
 ];
-export { profile, social, work, stack, contact, brand, experiences, projects };
+
+const services = [
+  {
+    title1: "Machine",
+    title2: "Learning",
+    src: ml,
+  },
+  {
+    title1: "Artificial",
+    title2: "Intelligence",
+    src: bot,
+  },
+  {
+    title1: "Back-end",
+    title2: "Development",
+    src: backend,
+  },
+  {
+    title1: "Data",
+    title2: "Science",
+    src: data,
+  },
+];
+export {
+  profile,
+  social,
+  work,
+  stack,
+  contact,
+  brand,
+  experiences,
+  projects,
+  services,
+};

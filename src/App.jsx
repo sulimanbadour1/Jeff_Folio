@@ -11,7 +11,8 @@ import "/src/App.css";
 import "/src/stylesheets/theme/theme.css";
 import WorkExperience from "./components/sections/WorkExperience";
 import Awards from "./components/sections/Awards";
-import Projects from "./components/sections/Projects";
+import Services from "./components/sections/Services";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const { theme } = useContext(ThemeContext);
@@ -22,10 +23,12 @@ function App() {
       <Home />
       <Work />
       <WorkExperience theme={theme} />
+      <Services />
       <Stack />
       <Awards />
       <Contact />
       <Footer />
+      <Toaster />
       <ScrollToTop />
     </div>
   );
