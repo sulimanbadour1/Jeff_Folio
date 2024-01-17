@@ -1,0 +1,122 @@
+.project{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px 50px 50px;
+    border-top: 1px solid rgb(201, 201, 201);
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-top: 10px;
+    
+}
+.project:last-of-type{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.project:hover{
+    opacity: 0.5;
+}
+
+.project:hover h2{
+    transform: translateX(-10px);
+}
+
+.project:hover p{
+    transform: translateX(10px);
+}
+
+.project h2{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0px;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.project p{
+    transition: all 0.4s;
+    font-weight: 300;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 20px;
+}
+.maindesc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.seconddesc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.CardLinks{
+	display: flex;
+	justify-content: space-between;
+}
+
+.CardLinkProject{
+	position: relative;
+	font-size: var(--h6);
+	font-weight: var(--bold);
+	overflow: hidden;
+}
+
+.CardLinkProject::before{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	height: 4px;
+	width: 100%;
+	background-color: var(--accent);
+	transition: .2s ease;
+}
+
+.CardLinkProject:hover::before{
+	transform: translateX(-100%);
+}
+
+.CardIconArrow {
+	font-size: 1.4rem;
+	transform: rotate(-45deg);
+   
+}
+
+.CardLinkGit{
+	line-height: 0;
+}
+
+.CardIconGit{
+	font-size: 2.1rem;
+}
+
+.CardIconGit:hover{
+	transform: scale(1.1);
+}
+
+@media screen and (max-width: 1000px){
+    .project{
+        flex-direction: column;
+        padding: 14px 0px 14px 0px;
+    }
+    .project h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .project p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+    
+}

@@ -2,12 +2,15 @@ import * as icon from "react-icons/si";
 import daloopa from "./logos/companies/daloopa.jpg";
 import upwork from "./logos/companies/upwork.png";
 import jumio from "./logos/companies/jumio.png";
-import neerc from "./logos/awards/neerc.png";
-import face from "./logos/awards/face.webp";
-import meta from "./logos/awards/meta.png";
-import google from "./logos/awards/google.png";
-import aws from "./logos/awards/aws.png";
-//
+// import neerc from "./logos/awards/neerc.png";
+// import face from "./logos/awards/face.webp";
+// import meta from "./logos/awards/meta.png";
+// import google from "./logos/awards/google.png";
+// import aws from "./logos/awards/aws.png";
+//Project Images
+import c2montreal from "./logos/projects/landingblog.webp";
+import officestudio from "./logos/projects/northface.webp";
+import locomotive from "./logos/projects/tenso.webp";
 const profile = {
   name: "Jafar Badour",
   role: "Machine Learning Engineer",
@@ -193,4 +196,40 @@ const experiences = [
 //     icon: aws,
 //   },
 // ];
-export { profile, social, work, stack, contact, brand, experiences };
+
+const projects = [
+  {
+    title: "C2 Montreal",
+    src: "c2montreal.png",
+    color: "#000000",
+    label: "Machine Learning",
+    icon: icon.SiGithub,
+    description:
+      "C2 Montreal is a creative conference that explores the relationship between commerce and creativity.",
+    link: "https://www.github.com/",
+    image: c2montreal,
+  },
+  {
+    title: "Office Studio",
+    src: "officestudio.png",
+    color: "#8C8C8C",
+    label: "Machine Learning",
+    icon: icon.SiGithub,
+    description:
+      "Office Studio is a creative conference that explores the relationship between commerce and creativity.",
+    link: "https://www.github.com/",
+    image: officestudio,
+  },
+  {
+    title: "Locomotive",
+    src: "locomotive.png",
+    color: "#EFE8D3",
+    label: "Machine Learning",
+    icon: icon.SiGithub,
+    description:
+      "Locomotive is a creative conference that explores the relationship between commerce and creativity.",
+    link: "https://www.github.com/",
+    image: locomotive,
+  },
+];
+export { profile, social, work, stack, contact, brand, experiences, projects };

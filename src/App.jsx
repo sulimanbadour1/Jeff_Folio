@@ -11,6 +11,7 @@ import "/src/App.css";
 import "/src/stylesheets/theme/theme.css";
 import WorkExperience from "./components/sections/WorkExperience";
 import Awards from "./components/sections/Awards";
+import Projects from "./components/sections/Projects";
 
 function App() {
   const { theme } = useContext(ThemeContext);
