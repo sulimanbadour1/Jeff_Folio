@@ -4,4 +4,4 @@
 
 - **Data-Driven Content**: The portfolio content is dynamically loaded from the `data.js` file, making it easy to update and maintain.
 
-![Landing Page](path/to/landing-page-image.jpg)
+![Landing Page](https://github.com/sulimanbadour1/Jeff_Folio/blob/main/src/logos/mocks/mock1.png?raw=true)
