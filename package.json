@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.12.1",
     "@studio-freight/lenis": "^1.0.33",
     "emailjs": "^4.0.3",
     "framer-motion": "^10.18.0",

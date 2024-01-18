@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import toast, { Toaster } from "react-hot-toast";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import styles from "../../stylesheets/elements/Contact.module.css";
 import Button from "/src/components/elements/Button";
 const ContactForm = () => {
@@ -72,8 +72,48 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(e.name);
+
+    if (!validateForm()) {
+      return;
+    }
+    setLoading(true);
+
+    emailjs
+      .send(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        {
+          from: form.name,
+          to_name: "Suliman",
+          from_email: form.email,
+          to_email: "suliman.badour1@gmail.com", //Change this email to your preferred recipient
+          message: form.message,
+        },
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          // alert("Message sent successfully, I'll get back to you soon!");
+          toast.success(
+            "Message sent successfully, I'll get back to you soon!"
+          );
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+            subject: "",
+          });
+        },
+        (error) => {
+          // Handle the error here
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong, please try again later!");
+        }
+      );
   };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

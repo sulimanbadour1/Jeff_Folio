@@ -31,12 +31,38 @@
 }
 
 .contactInput{
-    @apply outline-none bg-[#7c7c7c37] rounded-sm border-b px-6 py-4 
-    border-[#fef5f528]  text-gray-900 transition-all
-    focus:border-[#d2b0b0] focus:text-[#efefef] 
-     hover:border-[#281515] hover:text-[#fff] w-full
-      placeholder-opacity-100
-     
+    background: #ffffff11;
+    border: 2px solid #1b1111f9;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 800;
+    
+    width: 100%;
+    margin-right: calc(0.5rem/* 8px */ * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-x-reverse)));
+    margin-top: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem/* 8px */ * var(--tw-space-y-reverse));
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--primary);
+    color: var(--accent);
+    border-color: var(--accent);
+  }
+
+
+  /* .contactInput:focus{
+    
+    background-color: #4137371f;
+    
+    font-weight: 700;
+  } */
+  .contactInput::placeholder{
+    color: var(--accent);
+    font-weight: 500;
   }
 
 
@@ -67,8 +93,7 @@
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-    border-radius: 5px;
-    border: 2px solid #1b1111f9;
+   
     font-size: 18px;
     line-height: 28px;
     font-weight: 800;
@@ -79,7 +104,8 @@
 
     .button:hover{
       
-      border: 1px solid #1301013b;
-      background-color: #ffffff2a;
-      color: var(--accent);
+      
+      background-color: var(--accent);
+      color: var(--primary);
+      transition: all 0.3s ease-in-out;
     }
