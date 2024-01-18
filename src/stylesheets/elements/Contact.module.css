@@ -32,13 +32,12 @@
 
 .contactInput{
     background: #ffffff11;
-    border: 2px solid #1b1111f9;
+    border: 1px solid #1b1111f9;
     border-radius: 5px;
     padding: 0.5rem;
-    font-size: 14px;
-    line-height: 28px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 800;
-    
     width: 100%;
     margin-right: calc(0.5rem/* 8px */ * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-x-reverse)));
@@ -52,6 +51,28 @@
     color: var(--accent);
     border-color: var(--accent);
   }
+  .contactMessage{
+    background: #ffffff11;
+    border: 1px solid #1b1111f9;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 800;
+    width: 100%;
+    margin-right: calc(0.5rem/* 8px */ * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-x-reverse)));
+    margin-top: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem/* 8px */ * var(--tw-space-y-reverse));
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: var(--primary);
+    color: var(--accent);
+    border-color: var(--accent);
+    
+  }
 
 
   /* .contactInput:focus{
@@ -62,7 +83,13 @@
   } */
   .contactInput::placeholder{
     color: var(--accent);
-    font-weight: 500;
+    font-weight: 600;
+    font-size: medium;
+  }
+  .contactMessage::placeholder{
+    color: var(--accent);
+    font-weight: 600;
+    
   }
 
 
@@ -101,11 +128,9 @@
     color: var(--primary);
       background-color: var(--accent);
   }
+.button:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+  }
 
-    .button:hover{
-      
-      
-      background-color: var(--accent);
-      color: var(--primary);
-      transition: all 0.3s ease-in-out;
-    }
+ 

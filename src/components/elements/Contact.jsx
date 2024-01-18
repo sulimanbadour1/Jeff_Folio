@@ -159,7 +159,7 @@ const ContactForm = () => {
             onBlur={validateSubject} // Add this
           />
           <textarea
-            className={styles.contactInput}
+            className={styles.contactMessage}
             placeholder="Message"
             name="message" // Add this
             value={form.message}
