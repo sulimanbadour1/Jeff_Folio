@@ -26,7 +26,7 @@ const profile = {
 const social = [
   { icon: icon.SiGithub, link: "https://github.com" },
   { icon: icon.SiUpwork, link: "https://www.upwork.com/" },
-  { icon: icon.SiLinkedin, link: "https://www.twitter.com/" },
+  { icon: icon.SiLinkedin, link: "https://www.linkedin.com/" },
   { icon: icon.SiInstagram, link: "https://www.instagram.com/" },
 ];
 
