@@ -159,8 +159,8 @@ const ContactForm = () => {
             onBlur={validateSubject} // Add this
           />
           <textarea
-            className={styles.contactMessage}
-            placeholder="Message"
+            className={styles.contactInput}
+            placeholder="Write your message here..."
             name="message" // Add this
             value={form.message}
             onChange={handleChange}

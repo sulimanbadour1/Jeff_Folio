@@ -71,7 +71,6 @@
     background-color: var(--primary);
     color: var(--accent);
     border-color: var(--accent);
-    
   }
 
 
@@ -83,12 +82,12 @@
   } */
   .contactInput::placeholder{
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 400;
     font-size: medium;
   }
   .contactMessage::placeholder{
     color: var(--accent);
-    font-weight: 600;
+    font-weight: 400;
     
   }
 
