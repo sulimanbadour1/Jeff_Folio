@@ -13,6 +13,8 @@ const SocialLinks = () => {
           target="_blank"
           key={uuidv4()}
           alt={s.alt}
+          rel="noopener noreferrer"
+          aria-label={s.alt}
         >
           <Icon icon={s.icon} />
         </a>
