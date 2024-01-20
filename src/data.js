@@ -24,9 +24,9 @@ const profile = {
 };
 
 const social = [
-  { icon: icon.SiGithub, link: "https://github.com" },
-  { icon: icon.SiUpwork, link: "https://www.upwork.com/" },
-  { icon: icon.SiLinkedin, link: "https://www.linkedin.com/" },
+  { icon: icon.SiGithub, link: "https://github.com", alt: "Github" },
+  { icon: icon.SiUpwork, link: "https://www.upwork.com/", alt: "Upwork" },
+  { icon: icon.SiLinkedin, link: "https://www.linkedin.com/", alt: "Linkedin" },
 ];
 
 const brand = "JB";
@@ -242,21 +242,25 @@ const services = [
     title1: "Machine",
     title2: "Learning",
     src: ml,
+    alt: "Machine Learning",
   },
   {
     title1: "Artificial",
     title2: "Intelligence",
     src: bot,
+    alt: "Artificial Intelligence",
   },
   {
     title1: "Back-end",
     title2: "Development",
     src: backend,
+    alt: "Back-end Development",
   },
   {
     title1: "Data",
     title2: "Science",
     src: data,
+    alt: "Data Science",
   },
 ];
 export {

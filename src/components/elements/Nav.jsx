@@ -42,12 +42,19 @@ const Nav = () => {
         </div>
       </div>
       <div className="Nav-buttons">
-        <button className="Nav-switch" onClick={() => switchTheme()}>
+        <button
+          className="Nav-switch"
+          onClick={() => switchTheme()}
+          aria-label={
+            theme === "light" ? "Switch to dark theme" : "Switch to light theme"
+          }
+        >
           {theme === "light" ? <RiMoonLine /> : <RiSunLine />}
         </button>
         <button
           className="Nav-toggle"
           onClick={() => setMenu((prevMenu) => !prevMenu)}
+          aria-label={menu ? "Close menu" : "Open menu"}
         >
           {menu ? <RiCloseLine /> : <RiMenuFill />}
         </button>
