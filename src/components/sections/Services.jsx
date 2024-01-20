@@ -2,7 +2,7 @@ import { services } from "../../data";
 import Service from "../elements/Service";
 const Services = () => {
   return (
-    <section className="Contact section" id="contact">
+    <section className="Contact section">
       <div className="container">
         <h2 className="Contact-h2 section-head">Services.</h2>
         {services.map((service) => {

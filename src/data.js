@@ -27,7 +27,6 @@ const social = [
   { icon: icon.SiGithub, link: "https://github.com" },
   { icon: icon.SiUpwork, link: "https://www.upwork.com/" },
   { icon: icon.SiLinkedin, link: "https://www.linkedin.com/" },
-  { icon: icon.SiInstagram, link: "https://www.instagram.com/" },
 ];
 
 const brand = "JB";
@@ -121,7 +120,7 @@ const stack = [
 
 const contact = {
   description:
-    "Tenetur laudantium? Aliquid ipsum perferendis blanditiis non. Adipisci eos numquam reiciendis, rerum, quo similique reprehenderit. Adipisci eos numquam reiciendis",
+    "Let's get in touch! I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
   email: "example@email.com",
 };
 

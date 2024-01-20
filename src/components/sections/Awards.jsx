@@ -21,7 +21,7 @@ const Awards = () => {
     });
   }, []);
   return (
-    <section className="Contact section" id="contact">
+    <section className="Contact section" id="awards">
       <div className="container">
         <h2 className="Contact-h2 section-head">Activities & Awards.</h2>
         <div className="container-sm">
