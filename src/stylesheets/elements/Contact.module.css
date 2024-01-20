@@ -32,12 +32,10 @@
 
 .contactInput{
     background: #ffffff11;
-    border: 1px solid #1b1111f9;
+    border: 2px solid #1b11112c;
     border-radius: 5px;
     padding: 0.5rem;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 800;
+    font-size: 14px;
     width: 100%;
     margin-right: calc(0.5rem/* 8px */ * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-x-reverse)));
@@ -53,12 +51,10 @@
   }
   .contactMessage{
     background: #ffffff11;
-    border: 1px solid #1b1111f9;
+    border: 2px solid #1b11112c;
     border-radius: 5px;
     padding: 0.5rem;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 800;
+    font-size: 14px;
     width: 100%;
     margin-right: calc(0.5rem/* 8px */ * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem/* 8px */ * calc(1 - var(--tw-space-x-reverse)));
@@ -74,6 +70,8 @@
   }
 
 
+
+
   /* .contactInput:focus{
     
     background-color: #4137371f;
@@ -82,13 +80,10 @@
   } */
   .contactInput::placeholder{
     color: var(--accent);
-    font-weight: 400;
-    font-size: medium;
   }
   .contactMessage::placeholder{
     color: var(--accent);
-    font-weight: 400;
-    
+
   }
 
 
