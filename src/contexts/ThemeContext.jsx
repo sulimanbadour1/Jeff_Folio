@@ -1,20 +1,29 @@
-import { createContext, useState } from 'react'
+import { createContext, useState, useEffect } from "react";
 
-const ThemeContext = createContext()
+const ThemeContext = createContext();
 
 const ThemeProvider = ({ children }) => {
-	const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState("light");
 
-	const switchTheme = () => {
-		theme === 'light' ? setTheme('dark') : setTheme('light')
-	}
+  // Check local storage for theme on component mount
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setTheme(storedTheme);
+    }
+  }, []);
 
-	return (
-		<ThemeContext.Provider value={{ theme, switchTheme }}>
-			{' '}
-			{children}{' '}
-		</ThemeContext.Provider>
-	)
-}
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme); // Save new theme to local storage
+  };
 
-export { ThemeContext, ThemeProvider }
+  return (
+    <ThemeContext.Provider value={{ theme, switchTheme }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
+
+export { ThemeContext, ThemeProvider };
