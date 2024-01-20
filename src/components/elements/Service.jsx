@@ -11,10 +11,10 @@ const anim = {
   closed: { width: 0 },
 };
 
-export default function Service({ project }) {
+export default function Service({ project, theme }) {
   const [isActive, setIsActive] = useState(false);
 
-  const { title1, title2, src, alt } = project;
+  const { title1, title2, src, alt, src_dark } = project;
   return (
     <div
       onMouseEnter={() => {
@@ -31,7 +31,11 @@ export default function Service({ project }) {
         animate={isActive ? "open" : "closed"}
         className={styles.imgContainer}
       >
-        <img src={src} alt={alt}></img>
+        {theme === "light" ? (
+          <img src={src} alt={alt}></img>
+        ) : (
+          <img src={src_dark} alt={alt}></img>
+        )}
       </motion.div>
       <p>{title2}</p>
     </div>

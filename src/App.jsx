@@ -23,7 +23,7 @@ function App() {
       <Home />
       <Work />
       <WorkExperience theme={theme} />
-      <Services />
+      <Services theme={theme} />
       <Stack />
       <Awards />
       <Contact />

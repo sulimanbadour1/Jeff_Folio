@@ -16,6 +16,11 @@ import ml from "./logos/services/ml.png";
 import bot from "./logos/services/bot.png";
 import backend from "./logos/services/backend.png";
 import data from "./logos/services/data.png";
+import data_dark from "./logos/services/data_dark.png";
+import backend_dark from "./logos/services/backend_dark.png";
+import bot_dark from "./logos/services/bot_dark.png";
+import ml_dark from "./logos/services/ml_dark.png";
+//
 const profile = {
   name: "Jafar Badour",
   role: "Machine Learning Engineer",
@@ -241,25 +246,29 @@ const services = [
   {
     title1: "Machine",
     title2: "Learning",
-    src: ml,
+    src: ml_dark,
+    src_dark: ml,
     alt: "Machine Learning",
   },
   {
     title1: "Artificial",
     title2: "Intelligence",
-    src: bot,
+    src: bot_dark,
+    src_dark: bot,
     alt: "Artificial Intelligence",
   },
   {
     title1: "Back-end",
     title2: "Development",
-    src: backend,
+    src: backend_dark,
+    src_dark: backend,
     alt: "Back-end Development",
   },
   {
     title1: "Data",
     title2: "Science",
-    src: data,
+    src: data_dark,
+    src_dark: data,
     alt: "Data Science",
   },
 ];
