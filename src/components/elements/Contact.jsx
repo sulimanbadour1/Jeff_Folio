@@ -84,7 +84,7 @@ const ContactForm = () => {
         import.meta.env.VITE_TEMPLATE_ID,
         {
           from: form.name,
-          to_name: "Suliman",
+          to_name: import.meta.env.VITE_EMAIL_USER,
           from_email: form.email,
           to_email: "suliman.badour1@gmail.com", //Change this email to your preferred recipient
           message: form.message,
