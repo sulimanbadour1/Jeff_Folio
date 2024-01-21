@@ -86,7 +86,7 @@ const ContactForm = () => {
           from: form.name,
           to_name: "Jafar Badour",
           from_email: form.email,
-          to_email: import.meta.env.VITE_EMAIL_USER, //Change this email to your preferred recipient
+          to_email: import.meta.env.VITE_EMAIL_USER, // TO change this, contact me so i can change it in the emailjs dashboard
           message: form.message,
         },
         import.meta.env.VITE_EMAIL_KEY
