@@ -89,7 +89,7 @@ const ContactForm = () => {
           to_email: "suliman.badour1@gmail.com", //Change this email to your preferred recipient
           message: form.message,
         },
-        import.meta.env.VITE_PUBLIC_KEY
+        import.meta.env.VITE_EMAIL_KEY
       )
       .then(
         () => {
